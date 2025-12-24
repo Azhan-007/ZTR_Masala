@@ -293,7 +293,7 @@ body {
     
     /* --- HERO --- */
     .hero { 
-        height: 65vh;
+        height: 32vh;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -310,7 +310,7 @@ body {
         position: relative;
         z-index: 1;
         color: white;
-        max-width: 340px;
+        max-width: 260px;
         padding: 22px 26px;
         display: grid;
         gap: 12px;
