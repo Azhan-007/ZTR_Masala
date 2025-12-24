@@ -220,13 +220,31 @@ body {
     
     /* --- HERO --- */
     .hero { 
-        height: 70vh;
+        height: 75vh;
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
         padding-left: 5%;
+        background: url('components/images/bg.png') center center/cover no-repeat;
+        background-attachment: scroll;
     }
-    .hero-overlay { background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.05) 40%, transparent 50%); }
-    .hero-content { max-width: 90%; padding: 30px 35px; }
-    .hero h1 { font-size: 2.2rem; }
+    .hero-overlay { 
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.05) 40%, transparent 50%);
+    }
+    .hero-content { 
+        position: relative;
+        z-index: 1;
+        color: white;
+        max-width: 580px;
+        padding: 30px 35px;
+        display: grid;
+        gap: 16px;
+        text-align: left;
+        justify-items: flex-start;
+    }
+    .hero h1 { font-size: 2.5rem; line-height: 1.1; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; text-shadow: 0 8px 30px rgba(0,0,0,0.3); }
     .flavors-of { font-size: 1.5rem; }
     .hero p { font-size: 0.95rem; }
     
@@ -274,16 +292,34 @@ body {
     
     /* --- HERO --- */
     .hero { 
-        height: 60vh;
+        height: 65vh;
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
         padding-left: 5%;
+        background: url('components/images/bg.png') center center/cover no-repeat;
+        background-attachment: scroll;
     }
-    .hero-overlay { background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.05) 40%, transparent 50%); }
-    .hero-content { padding: 20px 25px; gap: 12px; max-width: 85%; }
-    .hero h1 { font-size: 1.6rem; line-height: 1.05; }
-    .flavors-of { font-size: 1.1rem; }
-    .hero p { font-size: 0.82rem; }
-    .cta-btn { padding: 8px 16px; font-size: 0.82rem; }
+    .hero-overlay { 
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.05) 40%, transparent 50%);
+    }
+    .hero-content { 
+        position: relative;
+        z-index: 1;
+        color: white;
+        max-width: 480px;
+        padding: 25px 30px;
+        display: grid;
+        gap: 14px;
+        text-align: left;
+        justify-items: flex-start;
+    }
+    .hero h1 { font-size: 1.9rem; line-height: 1.1; margin-bottom: 0.4rem; font-family: 'Playfair Display', serif; text-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .flavors-of { font-size: 1.3rem; }
+    .hero p { font-size: 0.9rem; color: #f3f4f6; text-shadow: 0 4px 20px rgba(0,0,0,0.25); }
+    .cta-btn { padding: 9px 18px; font-size: 0.88rem; }
     
     /* --- STORY --- */
     .story-section { padding: 2.5rem 3%; }
