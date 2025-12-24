@@ -148,5 +148,9 @@ displayProducts();
 // --- 6. MOBILE MENU TOGGLE ---
 function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    } else {
+        navLinks.classList.add('active');
+    }
 }
